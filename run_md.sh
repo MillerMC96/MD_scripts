@@ -10,5 +10,5 @@ for run in `ls *.tpr | sort -V`; do
     gmx mdrun -s ${run} -deffnm ../${filename}
     
     # move pullf files to a folder
-    mv ../${filename}_pullf.xvg force/
+    mv ../${filename}_pullf.xvg ../force/
 done
